@@ -112,4 +112,8 @@ document.getElementById('sell-btn').addEventListener('click' , function(){
 
 
 })
+// modal
+document.getElementById('go-home-btn').addEventListener('click' , function(){
+    window.location.href = 'index.html';
+})
 
