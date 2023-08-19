@@ -121,24 +121,36 @@
                 </div>
             </div>
             <!-- cart -->
-            <div class="pt-10 space-y-10">
+            <!-- mb-10 has to be given -->
+            <div class="space-y-10">
                 <!-- coupon div -->
-                <div class="shadow-lg shadow-gray-400 p-5 rounded-lg font-semibold text-lg">
+                <div class="shadow-lg shadow-gray-400 p-5 rounded-lg font-semibold text-lg space-y-3">
                     <p>Have coupon?</p>
-                    <div>
-                        <input type="text" placeholder="Coupon code">
-                        <button class="btn">Apply</button>
+                    <div class="border-2 border-gray-300 rounded-lg">
+                        <input type="text" placeholder="Coupon code" class="outline-none m-2">
+                        <button
+                            class="btn  rounded-l-none  bg-[#E527B2] text-white text-base font-semibold border-none  hover:bg-[#ff66d6] normal-case">Apply</button>
                     </div>
                 </div>
                 <!-- total div -->
                 <div class="shadow-lg shadow-gray-400 p-5 rounded-lg">
-                    <div>
-
+                    <div class="space-y-3">
+                        <h1>hello</h1>
+                        <p class="border-b border-2"></p>
                     </div>
-                    <div>
-                        <p>Total price: <span id="total-price">0.00 </span>Tk</p>
-                        <p>Discount: <span>0.00 </span>Tk</p>
-                        <p>Total: <span id="final-total-price">0.00 </span>Tk</p>
+                    <div class="space-y-3 relative mt-4">
+                        <p class="font-semibold">Total price: <span id="total-price"
+                                class="text-gray-400 font-medium">0.00</span><span
+                                class="text-gray-400 font-medium">TK</span></p>
+                        <p class="font-semibold">Discount: <span class="text-gray-400 font-medium">0.00</span><span
+                                class="text-gray-400 font-medium">TK</span></p>
+                        <p class="font-semibold">Total: <span id="final-total-price"
+                                class="text-gray-400 font-medium">0.00</span><span><span
+                                    class="text-gray-400 font-medium">TK</span></span></p>
+                        <p class="border-b border-2"></p>
+                        <button
+                            class="btn absolute bg-[#E527B2] text-white text-base font-semibold px-7 hover:bg-[#ff66d6] w-full   normal-case">Make
+                            Purchase</button>
                     </div>
                 </div>
             </div>
