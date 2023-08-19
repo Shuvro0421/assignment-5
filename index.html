@@ -32,7 +32,7 @@
                 <div class="flex gap-7 items-center justify-center">
                     <h4 class="text-lg font-medium">Use Promo Code</h4>
                     <button
-                        class="btn bg-[#E527B2] text-white text-base font-semibold px-7 hover:bg-[#ff66d6]">SELL200</button>
+                        class="btn bg-[#E527B2] text-white text-base font-semibold px-7 hover:bg-[#ff66d6]" id="sell-btn">SELL200</button>
                 </div>
             </div>
             <!-- image -->
@@ -131,9 +131,9 @@
                 <div class="shadow-lg bg-[#FFF] shadow-gray-400 p-5 rounded-lg font-semibold text-lg space-y-3">
                     <p>Have coupon?</p>
                     <div class="border-2 border-gray-300 rounded-lg">
-                        <input type="text" placeholder="Coupon code" class="outline-none m-2">
+                        <input type="text" placeholder="Coupon code" class="outline-none m-2" id="coupon-field">
                         <button id="apply-btn"
-                            class="btn  rounded-l-none  bg-[#E527B2]  text-white text-base font-semibold border-none  hover:bg-[#ff66d6] normal-case">Apply</button>
+                            class="btn  rounded-l-none  bg-[#E527B2] rounded-md  text-white text-base font-semibold border-none  hover:bg-[#ff66d6] normal-case" disabled>Apply</button>
                     </div>
                 </div>
                 <!-- total div -->
@@ -149,14 +149,14 @@
                         <p class="font-semibold">Total price: <span id="total-price"
                                 class="text-gray-400 font-medium">0.00</span><span
                                 class="text-gray-400 font-medium">TK</span></p>
-                        <p class="font-semibold">Discount: <span class="text-gray-400 font-medium" id="discount-price">400.00</span><span
+                        <p class="font-semibold">Discount: <span class="text-gray-400 font-medium" id="discount-price">0.00</span><span
                                 class="text-gray-400 font-medium">TK</span></p>
                         <p class="font-semibold">Total: <span id="final-total-price"
                                 class="text-gray-400 font-medium">0.00</span><span><span
                                     class="text-gray-400 font-medium">TK</span></span></p>
                         <p class="border-b border-2"></p>
-                        <button
-                            class="btn absolute border-none bg-[#E527B2] text-white text-base font-semibold px-7 hover:bg-[#ff66d6] w-full   normal-case">Make
+                        <button id="make-purchase"
+                            class="btn absolute border-none bg-[#E527B2] text-white text-base font-semibold px-7 hover:bg-[#ff66d6] w-full   normal-case" disabled>Make
                             Purchase</button>
                     </div>
                 </div>
