@@ -41,9 +41,111 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="mt-10 text-black p-5">
+        <h2 class="text-3xl font-semibold mb-7">Kitchenware</h2>
+        <div class="flex lg:flex-row flex-col justify-center items-center">
+            <div class="">
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 m-10">
+                    <!-- card -->
+                    <div
+                        class="card-class p-5 shadow-lg shadow-gray-400 flex flex-col items-center justify-center rounded-lg cursor-pointer">
+                        <!-- img -->
+                        <div class="bg-[#1111110D] w-full p-5 flex flex-col items-center justify-center">
+                            <img src="./images/prod1.png" alt="">
+                        </div>
+                        <!-- titles -->
+                        <div class="mt-5 space-y-3">
+                            <!-- rating -->
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            </div>
+                            <!-- accessories names -->
+                            <div class="flex flex-col items-center justify-center">
+                                <p class="text-base font-semibold">K. Accessories</p>
+                                <p class="text-sm text-gray-500 "><span class="money-class">39.00 </span>TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div
+                        class="card-class p-5 shadow-lg shadow-gray-400 flex flex-col items-center justify-center rounded-lg cursor-pointer">
+                        <!-- img -->
+                        <div class="bg-[#1111110D] w-full p-5 flex flex-col items-center justify-center">
+                            <img src="./images/prod2.png" alt="">
+                        </div>
+                        <!-- titles -->
+                        <div class="mt-5 space-y-3">
+                            <!-- rating -->
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            </div>
+                            <!-- accessories names -->
+                            <div class="flex flex-col items-center justify-center">
+                                <p class="text-base font-semibold">K. Accessories</p>
+                                <p class="text-sm text-gray-500 "><span class="">25.00 </span>TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div
+                        class="card-class p-5 shadow-lg shadow-gray-400 flex flex-col items-center justify-center rounded-lg cursor-pointer">
+                        <!-- img -->
+                        <div class="bg-[#1111110D] w-full p-5 flex flex-col items-center justify-center ">
+                            <img src="./images/prod3.png" alt="">
+                        </div>
+                        <!-- titles -->
+                        <div class="mt-5 space-y-3">
+                            <!-- rating -->
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            </div>
+                            <!-- accessories names -->
+                            <div class="flex flex-col items-center justify-center">
+                                <p class="text-base font-semibold">Home Cooker</p>
+                                <p class="text-sm text-gray-500 "><span class="">49.00 </span>TK</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- cart -->
+            <div class="pt-10 space-y-10">
+                <!-- coupon div -->
+                <div class="shadow-lg shadow-gray-400 p-5 rounded-lg font-semibold text-lg">
+                    <p>Have coupon?</p>
+                    <div>
+                        <input type="text" placeholder="Coupon code">
+                        <button class="btn">Apply</button>
+                    </div>
+                </div>
+                <!-- total div -->
+                <div class="shadow-lg shadow-gray-400 p-5 rounded-lg">
+                    <div>
 
+                    </div>
+                    <div>
+                        <p>Total price: <span id="total-price">0.00 </span>Tk</p>
+                        <p>Discount: <span>0.00 </span>Tk</p>
+                        <p>Total: <span id="final-total-price">0.00 </span>Tk</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
