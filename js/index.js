@@ -1,24 +1,42 @@
-const cardClasses = document.getElementsByClassName('card-class');
+document.getElementById('card-1').addEventListener('click' , function(){
 
-for (const cardClass of cardClasses) {
-    cardClass.addEventListener('click', function () {
-        const moneyClass = cardClass.querySelector('.money-class');
-        const moneyClassValueString = moneyClass.innerText;
-        const moneyClassCValue = parseFloat(moneyClassValueString);
+    priceElement('price-1');
+    elementName('Spoons');
 
-        const totalPrice = document.getElementById('total-price');
-        totalPrice.innerText = moneyClassCValue;
-    });
+})
+
+document.getElementById('card-2').addEventListener('click' , function(){
+
+    priceElement('price-2');
+    elementName('Plates')
+
+})
+
+document.getElementById('card-3').addEventListener('click' , function(){
+
+    priceElement('price-3');
+    elementName('Home Cooker')
+})
+
+function priceElement(prices){
+
+    const price = document.getElementById(prices);
+    const priceValueString = price.innerText;
+    const priceValue = parseFloat(priceValueString);
+    const totalPrice = document.getElementById('total-price');
+    totalPrice.innerText = priceValue;
+
 }
 
-// const moneyClasses = document.getElementsByClassName('money-class');
-// for (const moneyClass of moneyClasses) {
-//     moneyClass.addEventListener('click', function () {
-//         const moneyClassValueString = moneyClass.innerText;
-//         const moneyClassCValue = parseFloat(moneyClassValueString);
-//         console.log(moneyClassCValue);
-//         const totalPrice = document.getElementById('total-price');
-//         totalPrice.innerText = moneyClassCValue;
-//     });
-// }
+function elementName(name){
+    const valueName = document.getElementById('element-name');
+    const count = valueName.childElementCount + 1;
+    const p = document.createElement('p');
+    p.innerHTML = `${count}. ${name}`;
+    valueName.appendChild(p);
+    
+
+}
+
+
 
