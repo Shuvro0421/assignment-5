@@ -1,5 +1,6 @@
 function priceElement(prices, name) {
 
+    // total price calculation
     const price = document.getElementById(prices);
     const priceValueString = price.innerText;
     const priceValue = parseFloat(priceValueString);
@@ -8,6 +9,21 @@ function priceElement(prices, name) {
     const totalPriceNumber = parseFloat(totalPriceString);
     const NewTotalPrice = priceValue + totalPriceNumber;
     totalPrice.innerText = NewTotalPrice.toFixed(2);
+
+    
+
+    // discount price
+    const discountPrice = document.getElementById('discount-price');
+    const discountPriceString = discountPrice.innerText;
+    const discountPriceNumber = parseFloat(discountPriceString);
+    const newFinalTotalPrice = NewTotalPrice - discountPriceNumber;
+
+
+    // show final price
+    const finalTotalPrice = document.getElementById('final-total-price');
+    finalTotalPrice.innerText = newFinalTotalPrice.toFixed(2);
+
+    // element name showcasing
     const valueName = document.getElementById('element-name');
     const count = valueName.childElementCount + 1;
     const p = document.createElement('p');
@@ -29,6 +45,7 @@ document.getElementById('card-3').addEventListener('click', function () {
 
     priceElement('price-3', 'Home Cooker');
 })
+
 
 
 
