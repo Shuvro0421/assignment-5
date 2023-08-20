@@ -15,13 +15,13 @@ function priceElement(prices, name) {
     const makePurchaseButton = document.getElementById('make-purchase');
     const applyButton = document.getElementById('apply-btn');
 
-    if(totalPrice.innerText >= 0){
+    if (totalPrice.innerText >= 0) {
 
         makePurchaseButton.disabled = false;
-        
+
     }
 
-    if(totalPrice.innerText >= 200){
+    if (totalPrice.innerText >= 200) {
 
         applyButton.disabled = false;
     }
@@ -40,32 +40,63 @@ function priceElement(prices, name) {
 
 
 // just function
-function getId(getId){
+function getId(getId) {
     const getGet = document.getElementById(getId);
     const getGetString = getGet.innerText;
     const getGetValue = parseFloat(getGetString);
     return getGetValue;
 }
 
-function getId2(getId2){
+function getId2(getId2) {
     const getGet2 = document.getElementById(getId2);
     return getGet2;
 }
 
 
 // codes
+// 1
 document.getElementById('card-1').addEventListener('click', function () {
-    priceElement('price-1', 'Spoons');
+    priceElement('price-1', 'Spoon Set');
 })
 
 document.getElementById('card-2').addEventListener('click', function () {
-    priceElement('price-2', 'Plates');
+    priceElement('price-2', 'Platinum Plates');
 })
 
 document.getElementById('card-3').addEventListener('click', function () {
 
     priceElement('price-3', 'Home Cooker');
 })
+
+
+// 2
+document.getElementById('card-4').addEventListener('click', function () {
+    priceElement('price-4', 'Sports Cap');
+})
+
+document.getElementById('card-5').addEventListener('click', function () {
+    priceElement('price-5', 'Full Jersey Set');
+})
+
+document.getElementById('card-6').addEventListener('click', function () {
+
+    priceElement('price-6', 'Sports Cates');
+})
+
+// 2
+document.getElementById('card-7').addEventListener('click', function () {
+    priceElement('price-7', 'Single Relax Chair');
+})
+
+document.getElementById('card-8').addEventListener('click', function () {
+    priceElement('price-8', 'Children Play Chair');
+})
+
+document.getElementById('card-9').addEventListener('click', function () {
+
+    priceElement('price-9', 'Flexible Sofa');
+})
+
 
 
 // apply button
@@ -79,7 +110,7 @@ document.getElementById('apply-btn').addEventListener('click', function () {
     const finalFinalTotalPrice = getId2('final-total-price');
 
     if (couponField.value === 'SELL200') {
-        
+
         const newFinalTotalPrice = totalPrice2Value * (20 / 100);
         discountPrice.innerText = newFinalTotalPrice.toFixed(2);
 
@@ -89,8 +120,8 @@ document.getElementById('apply-btn').addEventListener('click', function () {
 
         couponField.value = '';
 
-        
-        
+
+
     } else {
         alert('Wrong Coupon Code');
         finalFinalTotalPrice.innerText = totalPriceNumber.toFixed(2);
@@ -99,11 +130,11 @@ document.getElementById('apply-btn').addEventListener('click', function () {
         discountPrice.innerText = '0.00';
 
         couponField.value = '';
-        
+
     }
 });
 
-document.getElementById('sell-btn').addEventListener('click' , function(){
+document.getElementById('sell-btn').addEventListener('click', function () {
     const sellButton = document.getElementById('sell-btn');
     const couponField = document.getElementById('coupon-field');
 
@@ -113,7 +144,7 @@ document.getElementById('sell-btn').addEventListener('click' , function(){
 
 })
 // modal
-document.getElementById('go-home-btn').addEventListener('click' , function(){
+document.getElementById('go-home-btn').addEventListener('click', function () {
     window.location.href = 'index.html';
 })
 
