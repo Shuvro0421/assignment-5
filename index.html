@@ -285,13 +285,17 @@
             <!-- mb-10 has to be given -->
             <div class="space-y-10 lg:mt-16 mt-7">
                 <!-- coupon div -->
-                <div class="shadow-lg bg-[#FFF] shadow-gray-400 p-5 rounded-lg font-semibold text-lg space-y-3">
+                <div class="shadow-lg bg-[#FFF] shadow-gray-400 p-5 rounded-lg font-semibold text-lg space-y-3 relative">
                     <p>Have coupon?</p>
-                    <div class=" border-2 border-gray-300 rounded-lg flex">
-                        <input type="text" placeholder="Coupon code" class="outline-none m-2" id="coupon-field">
-                        <button id="apply-btn"
-                            class="btn  rounded-l-none   bg-[#E527B2] rounded-md  text-white text-base font-semibold border-none  hover:bg-[#ff66d6] normal-case"
-                            disabled>Apply</button>
+                    <div class="flex ">
+                        <div class=" border-2 border-gray-300 rounded-lg rounded-r-none mr-20">
+                            <input type="text" placeholder="Coupon code" class="outline-none m-2 font-normal" id="coupon-field">
+                        </div>
+                        <div>
+                            <button id="apply-btn"
+                                class="btn  rounded-l-none  absolute right-6 bottom-5 bg-[#E527B2] rounded-lg  text-white text-base font-semibold  hover:bg-[#ff66d6] normal-case"
+                                disabled>Apply</button>
+                        </div>
                     </div>
                 </div>
                 <!-- total div -->
